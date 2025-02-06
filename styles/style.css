@@ -1,15 +1,9 @@
-/* стили для всех крупных блоков */
-.content_section {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  /* стили шапки проекта */
+  /* стили для шапки проекта */
 .header {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 90px 50px 96px;
 }
 
 .header__logo {
@@ -26,6 +20,7 @@
 .header__links-list {
     display: flex;
     gap: 30px;
+    padding: 0px 0px 10px 0px;
 }
 
 .header__links-list-item {
@@ -42,17 +37,34 @@
 }
 
 .header__address {
-    max-width: 240px;
+    width: 240px;
+    height: 105px;
     justify-self: end;
+    font-style: inherit;
+}
+
+/* стили для части адреаса */
+.address-text {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    text-underline-position: under;
+}
+
+.address-address {
+    font-size: 18px;
+    line-height: 24px;
+    gap: 1px;
 }
 
 /* стили для обложки проекта */
 .cover {
     position: relative;
-    padding: 165px 50px 50px 50px;
+    padding: 160px 50px 50px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .overlay {
@@ -74,7 +86,7 @@
     gap: 20px;
     font-size: 100px;
     font-weight: 700;
-    letter-spacing: 40px;
+    letter-spacing: 30px;
     color: #FFF;
 }
 
@@ -84,6 +96,7 @@
 
 .aligned-text_center {
     text-align: center;
+    margin-right: -30px;
 }
 
 .aligned-text_right {
@@ -91,7 +104,7 @@
 }
 
 .letter-spacing-extended {
-    letter-spacing: 40px;
+    letter-spacing: 30px;
 }
 
 .no-letter-spacing {
@@ -102,14 +115,15 @@
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 120px;
     align-items: center;
-    padding: 106px 50px 50px;
+    padding: 100px 0 0;
 }
 
 .cover__description-text {
     color: #FFF;
-    word-spacing: 20px;
+    word-spacing: 16px;
     font-size: 22px;
     text-transform: uppercase;
 }
@@ -117,7 +131,7 @@
 .bet-button {
     font-size: 22px;
     border: #FFF solid 1px;
-    padding: 10px 15px;
+    padding: 10px 30px;
     text-transform: uppercase;
     background-color: transparent;
     color: #FFF;
@@ -125,14 +139,14 @@
 
 /* стили для лотов проекта */
 .lots {
-    padding: 180px 24px 53px;
-    min-height: 723px;
+    padding: 185px 24px 53px;
 }
 
 .lots__heading {
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
+    padding: 0px 40px;
 }
 
 .lots__card-list {
@@ -140,7 +154,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     list-style: none;
-    padding: 27px 24px 53px;
+    padding: 27px 0px 30px;
 }
 
 .lots__card-list-item {
@@ -159,7 +173,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 48px 40px;
-    height: 100%;
+    min-height: 596px;
 }
 
 .card_type_film {
@@ -196,15 +210,15 @@
 .lots__look-more-link {
     font-size: 20px;
     font-weight: 400;
-    padding: 30px 40px 2px;
+    padding: 30px 0px 0px 40px;
 }
 
 /* стили раздела об аукционе */
 .about {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    padding: 120px 35px 47px;
-    gap: 72px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 45px;
+    padding: 99px 30px 70px;
 }
 
 .about__column {
@@ -230,42 +244,46 @@
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 100px 0px;
+    padding: 100px 0px 100px;
+}
+
+.about__column-text {
+    grid-column: 2/4;
 }
 
 .about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     font-size: 20px;
     font-weight: 400;
-    padding: 24px 0px;
+    line-height: normal;
 }
 
-/* стили подвала проекта */
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
-    padding: 180px 24px 0px;
-    height: 180px;
-}
-
-.footer__address {
     display: flex;
-    flex-direction: column;
-    padding: 1px 50px 82px;
-}
-
-.footer__menu-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    padding: 118px 50px 100px;
+  }
+  
+  .footer__social-icon {
+    width: auto;
+    height: 48px;
+  }
+  
+  .footer__menu-list {
+    text-align: center;
     list-style: none;
-}
+  }
+  
+  .footer__menu-link {
+    font-size: 18px;
+    line-height: normal;
+    text-underline-position: under;
+  }
 
-.footer__social-list {
+  .footer__social-list {
     display: flex;
-    justify-content: center;
     gap: 48px;
     list-style: none;
-}
-
-
+  }
