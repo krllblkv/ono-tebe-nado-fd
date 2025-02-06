@@ -36,6 +36,10 @@
     font-weight: 400;
 }
 
+.header__link_active {
+    text-decoration: none;
+  }
+
 .header__address {
     width: 240px;
     height: 105px;
@@ -174,24 +178,20 @@
     flex-direction: column;
     padding: 48px 40px;
     min-height: 596px;
+    background-position: center;
+    background-size: cover;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .card__title {
