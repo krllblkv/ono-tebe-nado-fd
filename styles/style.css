@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 90px 50px 96px;
+    padding: 91px 50px 96px;
 }
 
 .header__logo {
@@ -19,8 +19,8 @@
 
 .header__links-list {
     display: flex;
-    gap: 30px;
-    padding: 0px 0px 10px 0px;
+    gap: 33px;
+    line-height: 21.13px;
 }
 
 .header__links-list-item {
@@ -34,37 +34,34 @@
 .header__link {
     font-size: 18px;
     font-weight: 400;
+    text-underline-offset: 2px;
 }
 
 .header__link_active {
     text-decoration: none;
-  }
+}
+
+.address {
+    line-height: 24.3px;
+    font-size: 18px;
+}
 
 .header__address {
     width: 240px;
-    height: 105px;
     justify-self: end;
     font-style: inherit;
 }
 
 /* стили для части адреаса */
-.address-text {
+.address__link {
     display: block;
-    font-size: 20px;
-    line-height: 24px;
-    text-underline-position: under;
-}
-
-.address-address {
-    font-size: 18px;
-    line-height: 24px;
-    gap: 1px;
+    text-underline-position: under;   
 }
 
 /* стили для обложки проекта */
 .cover {
     position: relative;
-    padding: 160px 50px 50px 50px;
+    padding: 165px 50px 50px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,11 +84,12 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     font-size: 100px;
     font-weight: 700;
     letter-spacing: 30px;
     color: #FFF;
+    text-transform: uppercase;
 }
 
 .aligned-text {
@@ -119,23 +117,22 @@
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: flex-end;
-    gap: 120px;
     align-items: center;
-    padding: 100px 0 0;
+    padding: 104px 0px 0px;
 }
 
 .cover__description-text {
     color: #FFF;
-    word-spacing: 16px;
+    word-spacing: 19px;
     font-size: 22px;
     text-transform: uppercase;
+    margin-right: auto;
 }
 
 .bet-button {
     font-size: 22px;
     border: #FFF solid 1px;
-    padding: 10px 30px;
+    padding: 12px 32px;
     text-transform: uppercase;
     background-color: transparent;
     color: #FFF;
@@ -143,7 +140,7 @@
 
 /* стили для лотов проекта */
 .lots {
-    padding: 185px 24px 53px;
+    padding: 180px 24px 53px;
 }
 
 .lots__heading {
@@ -211,14 +208,15 @@
     font-size: 20px;
     font-weight: 400;
     padding: 30px 0px 0px 40px;
+    text-underline-offset: 5px;
 }
 
 /* стили раздела об аукционе */
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 45px;
-    padding: 99px 30px 70px;
+    column-gap: 20px;
+    padding: 101px 30px 70px;
 }
 
 .about__column {
@@ -233,6 +231,7 @@
     width: 240px;
     height: 240px;
     background-color: #000;
+    margin-right: 11px;
 }
 
 .about__logo-image {
@@ -257,13 +256,18 @@
     gap: 24px;
     font-size: 20px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 24px;
 }
 
+/* стили для подвала проекта */
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 118px 50px 100px;
+    padding: 111px 50px 115px;
+  }
+
+  .footer__address {
+    font-style: normal;
   }
   
   .footer__social-icon {
@@ -280,6 +284,10 @@
     font-size: 18px;
     line-height: normal;
     text-underline-position: under;
+  }
+
+  .footer__link_active {
+    text-decoration: none;
   }
 
   .footer__social-list {
