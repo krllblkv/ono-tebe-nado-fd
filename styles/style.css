@@ -44,12 +44,12 @@
 .address {
     line-height: 24.3px;
     font-size: 18px;
+    font-style: normal;
 }
 
 .header__address {
     width: 240px;
     justify-self: end;
-    font-style: inherit;
 }
 
 /* стили для части адреаса */
@@ -216,7 +216,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    padding: 101px 30px 70px;
+    padding: 101px 30px 181px;
 }
 
 .about__column {
@@ -263,13 +263,9 @@
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 111px 50px 115px;
+    padding: 0px 50px 82px;
   }
 
-  .footer__address {
-    font-style: normal;
-  }
-  
   .footer__social-icon {
     width: auto;
     height: 48px;
@@ -286,7 +282,7 @@
     text-underline-position: under;
   }
 
-  .footer__link_active {
+  .footer__menu-link_active {
     text-decoration: none;
   }
 
